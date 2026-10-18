@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio</title>
+<style>
+  :root { --bg:#ffffff; --fg:#16181d; --muted:#5b6472; --line:#e3e6ea; --accent:#2f6f4f; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#14161a; --fg:#eceef2; --muted:#9aa3b2; --line:#272b33; --accent:#7fc9a2; }
+  }
+  :root[data-theme="dark"] { --bg:#14161a; --fg:#eceef2; --muted:#9aa3b2; --line:#272b33; --accent:#7fc9a2; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:720px; margin:0 auto; padding:64px 16px 80px; }
+  h1 { font-size:2rem; margin:0 0 .25rem; letter-spacing:-.02em; }
+  .role { color:var(--muted); margin:0 0 2rem; }
+  h2 { font-size:.8rem; text-transform:uppercase; letter-spacing:.09em;
+       color:var(--muted); margin:2.5rem 0 .75rem; }
+  ul { padding-left:1.1rem; margin:0; }
+  li { margin:.4rem 0; }
+  a { color:var(--accent); }
+  .card { border:1px solid var(--line); border-radius:10px; padding:1rem 1.25rem; }
+  footer { margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Pranjal Agrawal</h1>
+    <p class="role">Data Science student, IIT Madras &middot; Tools in Data Science</p>
+
+    <h2>About</h2>
+    <div class="card">
+      <p style="margin:0">Building data and API services: FastAPI deployments, observability,
+      retrieval over embeddings, and agent tooling over the Model Context Protocol.</p>
+    </div>
+
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Live MCP server</strong> — public Streamable-HTTP endpoint exposing a tool to MCP clients.</li>
+      <li><strong>Config precedence service</strong> — 12-factor layering of defaults, YAML, .env and OS env with CLI overrides.</li>
+      <li><strong>Observability API</strong> — Prometheus counters, health checks and structured JSON logs.</li>
+      <li><strong>Semantic search</strong> — cosine-similarity ranking over precomputed embeddings.</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>Python, FastAPI, Docker, Redis</li>
+      <li>HTTP, CORS, OAuth 2.0 / OIDC, rate limiting and idempotency</li>
+      <li>NumPy, DuckDB, shell and Git forensics</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Email: <!--email_off-->24f2001638@ds.study.iitm.ac.in<!--/email_off--></p>
+
+    <footer>
+      <!--email_off-->24f2001638@ds.study.iitm.ac.in<!--/email_off-->
+    </footer>
+  </main>
+</body>
+</html>
